@@ -9,7 +9,12 @@
 import RenderSlot from './render-slot';
 export default {
     name: 'HelloWorld',
-    components: { RenderSlot }
+    components: { RenderSlot },
+    provide () {
+        return {
+            slotRoot: this
+        };
+    }
 };
 </script>
 
