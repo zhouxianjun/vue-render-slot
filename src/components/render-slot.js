@@ -1,3 +1,4 @@
+import { Fragment } from 'vue-fragment';
 export default {
     name: 'RenderSlot',
     functional: true,
@@ -15,6 +16,6 @@ export default {
         const slot = root.$scopedSlots[ctx.props.slotName]({
             ...ctx.data.attrs
         });
-        return h('fragment', slot);
+        return h(Fragment, slot);
     }
 };
