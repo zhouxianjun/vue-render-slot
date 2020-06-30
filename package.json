@@ -1,15 +1,25 @@
 {
   "name": "vue-render-slot",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/vue-render-slot.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --mode production --target lib ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
+  "author": "Alone",
+  "license": "ISC",
+  "keywords": [
+    "vue",
+    "slot",
+    "render"
+  ],
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-fragment": "^1.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.0",
@@ -24,5 +34,9 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhouxianjun/vue-render-slot.git"
   }
 }

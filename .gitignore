@@ -20,3 +20,12 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+package-lock.json
